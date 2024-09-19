@@ -29,8 +29,9 @@ fitur untuk merubah data username, email, dan full name(default null) dari sebua
 1. Clone repositori:
    ```bash
    git clone https://github.com/muhmmdfath/ProfileKu.git
-2. import database profile.sql ke server maupun localhost anda
-3. unzip folder vendor 
-4. jalankan aplikasi
+2. import database profile.sql ke server atau localhost anda
+3. ubah file env menjadi .env kemudian sesuaikan database yang digunakan
+4. unzip folder vendor 
+5. jalankan aplikasi
    ```bash
    php spark serve
