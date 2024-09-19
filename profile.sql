@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 20, 2024 at 12:30 AM
+-- Generation Time: Sep 20, 2024 at 01:11 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -92,7 +92,6 @@ CREATE TABLE `auth_groups_users` (
 
 INSERT INTO `auth_groups_users` (`group_id`, `user_id`) VALUES
 (1, 20),
-(2, 21),
 (2, 22);
 
 -- --------------------------------------------------------
@@ -140,7 +139,9 @@ INSERT INTO `auth_logins` (`id`, `ip_address`, `email`, `user_id`, `date`, `succ
 (23, '::1', 'fatihadli709@gmail.com', 20, '2024-09-19 19:00:21', 1),
 (24, '::1', 'azimaa@gmail.com', 21, '2024-09-19 20:55:09', 1),
 (25, '::1', 'fatihadli709@gmail.com', 20, '2024-09-19 21:23:02', 1),
-(26, '::1', 'fatih123@gmail.com', 22, '2024-09-19 22:27:18', 1);
+(26, '::1', 'fatih123@gmail.com', 22, '2024-09-19 22:27:18', 1),
+(27, '::1', 'fatihadli709@gmail.com', 20, '2024-09-19 22:33:10', 1),
+(28, '::1', 'fatihadli709@gmail.com', 20, '2024-09-19 22:57:51', 1);
 
 -- --------------------------------------------------------
 
@@ -256,8 +257,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `username`, `fullname`, `user_image`, `password_hash`, `reset_hash`, `reset_at`, `reset_expires`, `activate_hash`, `status`, `status_message`, `active`, `force_pass_reset`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(20, 'fatihadli709@gmail.com', 'muhammadfathi', 'Muhammad Fatih', 'default.svg', '$2y$10$EZYetY1rSUF1mKmr9k8BWuaDQ16SmTNmLo8EvTaKusaJZmagyNNIa', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2024-09-19 07:36:51', '2024-09-19 07:36:51', NULL),
-(21, 'imaa@gmail.com', 'comell', NULL, 'default.svg', '$2y$10$jnkcwNycGvPLt3R5OI3f8.Qrdzymt.nMsGOR4ycknS5guO8Vy3VPe', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2024-09-19 09:11:39', '2024-09-19 09:11:39', NULL),
+(20, 'admin1234@gmail.com', 'adminadmin', 'admin', 'default.svg', '$2y$10$EZYetY1rSUF1mKmr9k8BWuaDQ16SmTNmLo8EvTaKusaJZmagyNNIa', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2024-09-19 07:36:51', '2024-09-19 07:36:51', NULL),
 (22, 'fatih123@gmail.com', 'fatih', 'user', 'default.svg', '$2y$10$FEvWYAGIaRe5En6NOOmJ.umfhoO3Y0fZ.FOjkrNzfTuJBOaycaTQ2', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2024-09-19 22:27:01', '2024-09-19 22:27:01', NULL);
 
 --
@@ -359,7 +359,7 @@ ALTER TABLE `auth_groups`
 -- AUTO_INCREMENT for table `auth_logins`
 --
 ALTER TABLE `auth_logins`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `auth_permissions`
